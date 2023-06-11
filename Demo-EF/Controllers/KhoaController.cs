@@ -32,17 +32,16 @@ namespace Demo_EF.Controllers
         // Update
 
 
-        } public IActionResult CapNhat(string? makhoa, string? tenkhoa, int? sdt, bool isUpdate)
+        } public IActionResult CapNhat(string? makhoa, string? tenkhoa, int? sdt, bool? isUpdate= true)
         {
             var itemToUpdate = _context.Khoas.FirstOrDefault(x => x.MaKhoa == makhoa);
 
-            if ((bool)isUpdate)
+            if (!(bool)isUpdate)
             {
                 return View(itemToUpdate);
             }
             else
-            {
-          
+            {          
                 itemToUpdate.TenKhoa = tenkhoa;
                 itemToUpdate.Sdt = sdt.ToString();
                 _context.Update(itemToUpdate);
