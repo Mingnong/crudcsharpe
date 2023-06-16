@@ -1,5 +1,6 @@
 ﻿using Demo_EF.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace Demo_EF.Controllers
 {
@@ -47,7 +48,6 @@ namespace Demo_EF.Controllers
                 _context.Update(itemToUpdate);
                 _context.SaveChanges();
                 return RedirectToAction("Index");
-
             }
         }
 
@@ -72,6 +72,22 @@ namespace Demo_EF.Controllers
                 }
             }
 
+        public IActionResult Search(string searchData)
+       {
+
+            if (!String.IsNullOrEmpty(searchData))
+            {
+            var searchResults = _context.Khoas
+            .Where(x => EF.Functions.Like(x.Filter, "%" + searchData + "%"))
+            .ToList();
+            return Json(searchResults);
+            }
+            else
+            {
+            return View();
+            }
+
+        }
 
 
     }

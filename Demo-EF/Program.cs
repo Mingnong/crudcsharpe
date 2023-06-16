@@ -5,8 +5,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-builder.Services.AddDbContext<QlsvContext>(o =>
-{
+builder.Services.AddDbContext<QlsvContext>(o =>{
     o.UseSqlServer(builder.Configuration.GetConnectionString("DB"));
 });
 

@@ -22,6 +22,8 @@ public partial class Khoa
     [Unicode(false)]
     public string? Sdt { get; set; }
 
+    public string Filter { get; set; }
+
     [InverseProperty("MaKhoaNavigation")]
     public virtual ICollection<Sinhvien> Sinhviens { get; set; } = new List<Sinhvien>();
 }

@@ -56,6 +56,9 @@ public partial class QlsvContext : DbContext
         {
             entity.Property(e => e.MaKhoa).IsFixedLength();
             entity.Property(e => e.Sdt).IsFixedLength();
+            entity.Property(e => e.Filter)
+            .HasMaxLength(255)
+            .HasComputedColumnSql("LOWER([MaKhoa] + [TenKhoa] + [SDT])");
         });
 
         modelBuilder.Entity<Sinhvien>(entity =>
@@ -68,6 +71,7 @@ public partial class QlsvContext : DbContext
                 .OnDelete(DeleteBehavior.Cascade)
                 .HasConstraintName("FK_SINHVIEN_KHOA");
         });
+
 
         OnModelCreatingPartial(modelBuilder);
     }
