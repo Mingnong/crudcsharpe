@@ -12,9 +12,18 @@ namespace Demo_EF.Controllers
             _context = context;
         }
         // Read
-        public IActionResult Index()
+        public IActionResult Index(int page = 1)
         {
-            var item = _context.Khoas.ToList();
+            // pagination: take(5) --- skip((page - 1) * 5)
+
+            int limit = 5;
+            int skip = ((page - 1) * limit);
+
+            var item = _context.Khoas.OrderBy(k => k.MaKhoa)
+                .Skip(skip)
+                .Take(limit)
+                .ToList();
+            ViewBag.CurrentPage = page;
             return View(item);
         }
         
