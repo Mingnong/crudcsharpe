@@ -37,11 +37,11 @@ namespace Demo_EF.Controllers
 
         public IActionResult _partialGiangVien()
         {
-            return View();
+            return PartialView();
         }
         public IActionResult _partialKhoa()
         {
-            return View();
+            return PartialView();
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

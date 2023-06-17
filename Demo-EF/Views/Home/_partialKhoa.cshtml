@@ -2,3 +2,50 @@
 @*
     For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
 *@
+
+<h1>Khoa</h1>
+<table class="table table-striped overflow-scroll">
+    <thead>
+        <tr class="text-center">
+            <th scope="col">STT</th>
+            <th scope="col">Mã khoa</th>
+            <th scope="col">Tên khoa</th>
+            <th scope="col">Số điện thoại</th>
+            <th scope="col">Trạng thái</th>
+            <th scope="col">Thao tác</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null)
+        {
+            int i = 0;
+            foreach (var item in Model)
+            {
+                i++;
+                <tr>
+                    <td class="text-center">@i</td>
+                    <td class="text-center">@item.MaKhoa</td>
+                    <td class="text-center">@item.TenKhoa</td>
+                    <td class="text-center">@item.Sdt</td>
+                  @*  <td class="text-center @((bool)item.IsActive ? "text-success" : "text-danger")">
+                        @((bool)item.IsActive ? "Kích hoạt" : "Tạm khóa")
+                    </td>*@
+                    <td class="text-center">
+                        <a class="px-2" href="@Url.Action("Xoa", "Khoa", new { makhoa = item.MaKhoa })">
+                            <i class="fa fa-trash text-danger" aria-hidden="true"></i>
+                        </a>
+                        <a class="px-2" href="@Url.Action("CapNhat", "Khoa", new { makhoa = item.MaKhoa, isUpdate = false})">
+                            <i class="fa fa-pencil" aria-hidden="true"></i>
+                        </a>
+                    </td>
+                </tr>
+            }
+        }
+        else
+        {
+            <caption>
+                Không có dữ liệu
+            </caption>
+        }
+    </tbody>
+</table>
