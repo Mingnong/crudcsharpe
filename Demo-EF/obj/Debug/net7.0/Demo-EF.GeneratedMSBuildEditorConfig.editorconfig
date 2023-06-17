@@ -9,49 +9,61 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Demo_EF
 build_property.RootNamespace = Demo_EF
-build_property.ProjectDir = C:\Users\duong\OneDrive\Máy tính\c#project\crudcsharpe\Demo-EF\
+build_property.ProjectDir = C:\Users\hv\Desktop\crudcsharpe\Demo-EF\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\duong\OneDrive\Máy tính\c#project\crudcsharpe\Demo-EF
+build_property.MSBuildProjectDirectory = C:\Users\hv\Desktop\crudcsharpe\Demo-EF
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/duong/OneDrive/Máy tính/c\#project/crudcsharpe/Demo-EF/Views/Home/Index.cshtml]
+[C:/Users/hv/Desktop/crudcsharpe/Demo-EF/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/duong/OneDrive/Máy tính/c\#project/crudcsharpe/Demo-EF/Views/Khoa/CapNhat.cshtml]
+[C:/Users/hv/Desktop/crudcsharpe/Demo-EF/Views/Home/_partialGiangVien.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxfcGFydGlhbEdpYW5nVmllbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hv/Desktop/crudcsharpe/Demo-EF/Views/Home/_partialKhoa.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxfcGFydGlhbEtob2EuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hv/Desktop/crudcsharpe/Demo-EF/Views/Home/_partialSinhVien.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxfcGFydGlhbFNpbmhWaWVuLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hv/Desktop/crudcsharpe/Demo-EF/Views/Khoa/CapNhat.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2hvYVxDYXBOaGF0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/duong/OneDrive/Máy tính/c\#project/crudcsharpe/Demo-EF/Views/Khoa/Index.cshtml]
+[C:/Users/hv/Desktop/crudcsharpe/Demo-EF/Views/Khoa/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2hvYVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/duong/OneDrive/Máy tính/c\#project/crudcsharpe/Demo-EF/Views/Khoa/Search.cshtml]
+[C:/Users/hv/Desktop/crudcsharpe/Demo-EF/Views/Khoa/Search.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2hvYVxTZWFyY2guY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/duong/OneDrive/Máy tính/c\#project/crudcsharpe/Demo-EF/Views/Khoa/Them.cshtml]
+[C:/Users/hv/Desktop/crudcsharpe/Demo-EF/Views/Khoa/Them.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2hvYVxUaGVtLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/duong/OneDrive/Máy tính/c\#project/crudcsharpe/Demo-EF/Views/Shared/Error.cshtml]
+[C:/Users/hv/Desktop/crudcsharpe/Demo-EF/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/duong/OneDrive/Máy tính/c\#project/crudcsharpe/Demo-EF/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/hv/Desktop/crudcsharpe/Demo-EF/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/duong/OneDrive/Máy tính/c\#project/crudcsharpe/Demo-EF/Views/_ViewImports.cshtml]
+[C:/Users/hv/Desktop/crudcsharpe/Demo-EF/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/duong/OneDrive/Máy tính/c\#project/crudcsharpe/Demo-EF/Views/_ViewStart.cshtml]
+[C:/Users/hv/Desktop/crudcsharpe/Demo-EF/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/duong/OneDrive/Máy tính/c\#project/crudcsharpe/Demo-EF/Views/Shared/_Layout.cshtml]
+[C:/Users/hv/Desktop/crudcsharpe/Demo-EF/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-kr0ibg55q6

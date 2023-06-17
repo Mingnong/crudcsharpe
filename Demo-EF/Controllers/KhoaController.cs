@@ -87,7 +87,8 @@ namespace Demo_EF.Controllers
             if (!String.IsNullOrEmpty(searchData))
             {
             var searchResults = _context.Khoas
-            .Where(x => EF.Functions.Like(x.Filter, "%" + searchData + "%"))
+            //.Where(x => EF.Functions.Like(x.Filter, "%" + searchData + "%"))
+            .Where(x => x.Filter.Contains(searchData))
             .ToList();
             return Json(searchResults);
             }
